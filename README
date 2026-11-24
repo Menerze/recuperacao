@@ -1,0 +1,71 @@
+# API de Controle Financeiro
+
+## Sobre o projeto
+Este projeto é uma API de Controle Financeiro desenvolvida em PHP utilizando o Slim Framework.
+A API possui uma rota inicial que retorna uma mensagem informando que está funcionando corretamente.
+Também foram criados testes para verificar se a API está funcionando e se as respostas estão corretas.
+
+## Tecnologias utilizadas
+- PHP
+- Slim Framework
+- Composer
+- PHPUnit
+
+## Estrutura do projeto
+```text
+recuperacao/
+│
+├── src/
+│   └── app.php
+│
+├── tests/
+│   ├── CategoriasTest.php
+│   ├── LancamentosTest.php
+│   └── ResumoTest.php
+│
+├── vendor/
+│
+├── index.php
+├── composer.json
+├── composer.lock
+└── .gitignore
+```
+
+## Como executar o projeto
+1. Abra o terminal na pasta do projeto.
+2. Instale as dependências:
+
+```bash
+composer install
+```
+
+3. Inicie o servidor PHP:
+```bash
+php -S localhost:8000
+```
+
+4. Acesse no navegador:
+```text
+http://localhost:8000
+```
+
+## Como executar os testes
+No terminal, execute:
+```bash
+vendor/bin/phpunit tests
+```
+
+## Testes realizados
+O projeto possui três arquivos de testes:
+- **CategoriasTest:** verifica se a API está funcionando e retorna a mensagem correta.
+- **LancamentosTest:** verifica se a resposta está no formato JSON.
+- **ResumoTest:** verifica se a resposta possui a informação chamada mensagem.
+
+## Resultado dos testes
+Todos os três testes foram executados com sucesso, totalizando cinco verificações aprovadas.
+```text
+OK (3 tests, 5 assertions)
+```
+
+## Conclusão
+O projeto foi desenvolvido para praticar a criação de uma API em PHP e aprender a utilizar testes automatizados para verificar se o código está funcionando corretamente.
